@@ -1,12 +1,9 @@
 import React from 'react'
 import {useNavigate, Link} from "react-router-dom";
-import {Button, Navbar} from "react-bootstrap";
+import {Button, Nav, Navbar} from "react-bootstrap";
 import img from "../../assets/img/marketplace.png"
 import * as PropTypes from "prop-types";
-
-function FeatherIcon(props) {
-  return null;
-}
+import FeatherIcon from "feather-icons-react";
 
 FeatherIcon.propTypes = {icon: PropTypes.string};
 export const PublicNavbar = () => {

@@ -1,9 +1,10 @@
 import React, {useContext} from 'react'
 import {useNavigate, Link} from "react-router-dom";
-import {Button, Navbar} from "react-bootstrap";
+import {Button, Nav, Navbar} from "react-bootstrap";
 import img from "../../assets/img/marketplace.png"
 import * as PropTypes from "prop-types";
 import {AuthContext} from "../../components/auth/authContext";
+import FeatherIcon from "feather-icons-react";
 
 
 export const NavbarAdmin = () => {
@@ -28,10 +29,16 @@ export const NavbarAdmin = () => {
           <Link to={"/subcategory"} className="nv-link">
             Subcategories
           </Link>
+            <Link to={"/contact"} className="nv-link">
+                Contacts
+            </Link>
+            <Link to={"/product"} className="nv-link">
+                Product
+            </Link>
         </Nav>
         <Button variant="outline-light" onClick={handleLogin}>
-          <FeatherIcon icon={"log-in"}/>
-          Log-in
+          <FeatherIcon icon={"log-out"}/>
+          Log-out
         </Button>
       </Navbar>
   )
