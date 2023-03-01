@@ -9,7 +9,7 @@ FeatherIcon.propTypes = {icon: PropTypes.string};
 export const PublicNavbar = () => {
   const navigation = useNavigate();
   const handleLogin = ()=>{
-    navigation("/auth");
+    navigation("/auth"); 
   }
   return (
     <Navbar variant="dark" style={{backgroundColor:"#001d3d", padding:"9px"}}>
